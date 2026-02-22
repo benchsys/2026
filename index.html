@@ -1,459 +1,214 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-	<title>BenchSys 2026</title>
-	
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="The 5th ACM International Workshop on Advancements in Building Performance Simulation and Benchmarking Systems">
-	<link rel="shortcut icon" href="favicon.ico"> 
-	
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap" rel="stylesheet">
-	
-	<!-- FontAwesome JS-->
-	<script defer src="fontawesome/js/all.min.js"></script>
+    <title>BenchSys 2026</title>
 
-	<!-- Theme CSS -->  
-	<link id="theme-style" rel="stylesheet" href="css/theme.css">
-	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The 5th ACM International Workshop on Advancements in Building Performance Simulation and Benchmarking Systems">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script defer src="fontawesome/js/all.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+
 <style>
-#wrap {
-    background: #e7e7e7;
-    padding: 5%;
-    text-align: center;
-    width: 80%;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-#left, #right {
-     background: #ccc;
-     display: inline-block;
-     padding: 2%;
+.section {
+    padding: 80px 0;
 }
 
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-intro {
+    max-width: 850px;
+}
+
+hr {
+    margin: 60px 0;
+}
+
+/* HERO */
 #hero-block {
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    background: url('background.png') center center / cover no-repeat;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero-block-mask {
-    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text-block {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.85);
 }
 </style>
+</head>
 
+<body>
 
-</head> 
+<!-- HEADER -->
+<header class="header fixed-top">
+    <div class="branding">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<body>    
-	<header id="header" class="header fixed-top">	    
-		<div class="branding">
-			<div class="container-fluid">
-				<nav class="main-nav navbar navbar-expand-lg">
-					<div class="site-logo"> 
-						<!--div class="hero-text-block">
-						    <a class="scrollto" href="#hero-block">
-							<div class="hero-intro mb-4">BenchSys 2026</div>
-							</a>
-						</div-->
-						<!--a class="scrollto" href="#hero-block"><img class="logo-icon" src="images/logo-white1.svg" alt="logo"></a-->
-					</div>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					
-					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
-						<ul class="nav navbar-nav">
-							
-							<li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#cfp">Call for Paper</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#program">Program</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#organization">Organization</a></li>							
-							<li class="nav-item"><a class="nav-link scrollto" href="#venue">Registration and Venue</a></li>							
-							<li class="nav-item"><a class="nav-link scrollto" href="https://benchsys.github.io/">Previous BenchSys</a></li>
-						</ul><!--//nav-->
-					</div><!--//navabr-collapse-->
-
-				</nav><!--//main-nav-->
-				
-			</div><!--//container-->
-		</div><!--//branding-->
-	</header><!--//header-->
-	
-	<div id="hero-block" class="hero-block">
-		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item-1 carousel-item active">
-				</div>
-				<div class="carousel-item-2 carousel-item">
-				</div>
-				<div class="carousel-item-3 carousel-item">
-				</div>
-			</div>
-		</div>
-		<div class="hero-block-mask"></div>
-		<div class="container">
-			<div class="hero-text-block" style="max-width: 600px;">
-				<h1 class="hero-heading mb-2">AI4_BenchSys 2026</h1>
-				<div class="hero-intro mb-4">The 5th ACM International Workshop on Advancements in Building Performance Simulation and Benchmarking Systems</div>
-				<div class="hero-intro mb-4">(A BuildSys 2025 Workshop)</div>												
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>					
-				November 20-21, 2025<br> <i class="fas fa-map-marker-alt mx-2"></i>Banff, Canada, as part of the ACM Sustainability Week 2026</div>
-				<!--li style="list-style: none;">
-                                    <strong>
-                                        Register through: <a href="https://sensys.acm.org/2023/registration/"target="_blank" style="font-size: 18px; color: white; text-decoration: underline;">https://sensys.acm.org/2023/registration/</a>
-				    </strong>
-			            <br>
-                                    <span style="font-size: 18px; white-space: nowrap;">All accepted papers will be published in Scopus indexed ACM Digital Library</span>
-			</li-->
-				<!-- p class="lead"><a href="Poster.pdf" target="_blank"" style="color: orange"> <b>Download Flyer<b> </a></p -->
-				</div-->
-				</div-->
-			</div><!--//hero-text-block-->
-		</div><!--//container-->
-
-	</div><!--//hero-block-->
-	
-	<!--div class="stats-block theme-bg-primary text-white py-4 text-center">
-		<div class="container">
-			<div class="row">
-				<div class="event-countdown text-center mb-3">
-					<div id="countdown-box" class="countdown-box"></div>
-				</div>
-			</div>
-		</div>
-	</div-->
-
-	<section id="about" class="about-section section theme-bg-light">
-		<div class="container">
-			<h3 class="section-heading text-center mb-3">About BenchSys 2025</h3>
-			<div class="section-intro mx-auto mb-4">
-				<p>The AI4_BenchSys’25 workshop aims to bridge the gap between artificial intelligence and scalable building performance benchmarking from building to urban scale. Building on the success of the previous BenchSys series, this fourth edition integrates advances in AI, IoT, and urban-scale analytics to accelerate the digital transition toward sustainable built environments.</p>
-				<p>The workshop’s central objective is to explore AI-driven, scalable solutions for assessing, modeling, and benchmarking building performance in areas such as energy efficiency, climate adaptation, indoor and outdoor thermal comfort, and occupant well-being. With climate extremes and rapid urbanization placing unprecedented stress on cities, AI4_BenchSys’25 focuses on developing integrated, real-time, and intelligent systems that can manage large-scale data while ensuring privacy, standardization, and interpretability.</p>
-				<p>BenchSys 2022, 2023, and 2024 progressively broadened the scope from energy benchmarking to include indoor air quality, water use, health, wellness, and climate resilience. The 2025 edition deepens this focus through AI-enhanced urban-scale simulation, benchmarking, and sustainability strategies. The program will feature invited keynote talks, research paper presentations, and a panel discussion involving researchers, industry leaders, and policymakers from across the world to promote dialogue and collaboration for climate-resilient, human-centric cities.</p>
-				
-			</div>			
-		</div><!--//container-->
-	</section><!--//about-section-->
-	
-	<section id="cfp" class="about-section section theme-bg-white">
-		<div class="container">
-			<h3 class="section-heading text-center mb-3">Call for Papers</h3>
-			<!-- <a href="ACMBenchSys23.pdf"> -->
-				<h5 class="mb-2 text-center mb-3">BenchSys 2025 Call for Papers</h5>
-			</a>
-
-			<div class="section-intro mx-auto mb-4">The objective of the BenchSys workshop is to showcase ongoing research and advancements in building performance benchmarking and rating methods across different countries, while fostering connections among academic scholars, industry partners, government agencies, and policymakers. Topics of interest for the workshop include, but are not limited to, the following:</div>
-			<div class="benefits-list text-center mb-3">				
-				<ul class="list-unstyled text-start d-inline-block">
-					<li><i class="fas fa-check-circle me-2"></i>AI, machine learning and big data analytics for built environment and sustainability</li>
-					<li><i class="fas fa-check-circle me-2"></i>Building Energy Modelling and Benchmarking using scalable AI</li>
-					<li><i class="fas fa-check-circle me-2"></i>Climate and Energy Analytics for building performance</li>
-					<li><i class="fas fa-check-circle me-2"></i>Urban Analytics for Sustainable Built Environment Performance</li>
-					<li><i class="fas fa-check-circle me-2"></i>AI for Weather Extremes and Outdoor/Indoor Heat Stress Assessment</li>
-					<li><i class="fas fa-check-circle me-2"></i>AI-based Adaptation and Mitigation Strategies for Climate Extremes</li>
-					<li><i class="fas fa-check-circle me-2"></i>IoT and Real-time Sensor Networks for Building Performance Monitoring</li>
-					<li><i class="fas fa-check-circle me-2"></i>Data Quality, Standardization, Privacy, and Security from Building to Urban Scale</li>
-					<li><i class="fas fa-check-circle me-2"></i>Data Sharing Challenges and Solutions at Multiple Scales</li>
-					<li><i class="fas fa-check-circle me-2"></i>Machine Learning and Big Data in Building Performance Simulation</li>
-					<li><i class="fas fa-check-circle me-2"></i>Integration of Smart Technologies in Urban Building Performance Systems</li>
-					<li><i class="fas fa-check-circle me-2"></i>Comprehensive Benchmarking Standards for Urban and Building Typologies</li>
-					<li><i class="fas fa-check-circle me-2"></i>Advanced Urban Energy Simulation Software Development</li>
-					<li><i class="fas fa-check-circle me-2"></i>Digital Twins for Real-time Urban Building Performance Monitoring</li>
-					<li><i class="fas fa-check-circle me-2"></i>Benchmarking for Thermal Comfort, IAQ, Occupant Health, and Productivity</li>
-					<li><i class="fas fa-check-circle me-2"></i>Energy Sustainability through Advanced Benchmarking Pathways</li>
-					<li><i class="fas fa-check-circle me-2"></i>Case Studies on Urban-scale Building Performance Benchmarking</li>
-					<li><i class="fas fa-check-circle me-2"></i>Integration with UBEM, BIM, CIM, Water-Energy Nexus, Resilience, and Circularity</li>
-				</ul>
-			</div><!--//benefits-list-->
-			
-			<div class="mb-3">
-				<h4 class="mb-2 text-center mb-3">Submission Guidelines</h4>
-				<div class="section-intro mx-auto mb-4">The workshop solicits submissions for technical papers, or works in progress, reporting on novel research to be presented at the workshop (in person). Submitted papers must be unpublished and must not be currently under review for any other publication. Paper submissions must be at most 4 single-spaced US Letter (8.5"x11") pages, including figures, tables, and appendices (excluding references). All submissions must use the LaTeX (preferred) or Word styles found <a href="https://www.acm.org/publications/proceedings-template">here</a>. Authors must make a good faith effort to anonymize their submissions by (1) using the "anonymous" option for the class and (2) using "anonsuppress" section where appropriate. Papers that do not meet the size, formatting, and anonymization requirements will not be reviewed. Please note that ACM uses 9-pt fonts in all conference proceedings, and the style (both LaTeX and Word) implicitly define the font size to be 9-pt.</div>
-				<br><br>
-			</div>
-			
-			<div class="mb-3">
-				<h4 class="mb-2 text-center mb-3">Submission link</h4>
-				<div class="section-intro mx-auto mb-4">
-    All submissions must be in Adobe Portable Document Format (PDF) format through the HotCRP: 
-    <a href="https://buildsys25-benchsys.hotcrp.com/" target="_blank" rel="noopener noreferrer">
-        https://buildsys25-benchsys.hotcrp.com/
-    </a>
-</div>				
-			</div>		
-
-			<div class="mb-3">
-				<h4 class="mb-2 text-center mb-3">Important Dates</h4>
-				<div class="benefits-list text-center mb-3">				
-					<ul class="list-unstyled text-start d-inline-block">
-					    <li><i class="far fa-calendar-alt me-2"></i><strong>Paper submission: March 30, 2026 (AOE)</strong></li>
-						<li><i class="far fa-calendar-alt me-2"></i><strong>Notifications: April 15th, 2026 (AOE)</strong></li>
-						<li><i class="far fa-calendar-alt me-2"></i><strong>Camera-ready: April 30th, 2026 (AOE)</strong></li>
-						<li><i class="far fa-calendar-alt me-2"></i><strong>Workshop: June 22–25, 2026, in Banff, Canada, as part of the ACM Sustainability Week 2026. </strong></li>
-					</ul>
-				</div><!--//benefits-list-->
-			</div>
-		</div><!--//container-->		
-	</section><!--//cfp-section-->	
-	
-        
- 
-</section>
-
-	
-	<section id="organization" class="speakers-section section theme-bg-light">
-    <div class="container">
-        <h3 class="section-heading text-center mb-3">Organization</h3>			
-        <div class="mb-3 text-center">
-            <h4 class="mb-2 text-center mb-3">General Co-chairs</h4>
-            <div style="text-align: center; display: center !important;" class="text-center">
-
-                <!-- Chirag Deb -->
-                <div class="left col-6 col-lg-2 mb-4" style="display: inline-block; margin-right: 20px;">
-                    <div class="card rounded-0">
-                        <a href="https://www.sydney.edu.au/architecture/about/our-people/academic-staff/chirag-deb.html" target="_blank">
-                            <img src="Chirag1.jpg" class="card-img-top profile-image rounded-circle mb-2" style="width: 130px; height: 130px;" alt="Chirag Deb">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Chirag Deb</h5>
-                            <div class="card-text mb-3">
-                                <div class="meta">School of Architecture, Design and Planning</div>
-                                <div class="meta">The University of Sydney</div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="navigation" class="collapse navbar-collapse justify-content-lg-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#cfp">Call for Paper</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#organization">Organization</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#venue">Registration and Venue</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://benchsys.github.io/">Previous BenchSys</a></li>
+                    </ul>
                 </div>
-
-                <!-- Jeslu Jacob -->
-                <div class="left col-6 col-lg-2 mb-4" style="display: inline-block; margin-right: 20px;">
-                    <div class="card rounded-0">
-                        <a href="https://sustainability-accelerator.stanford.edu/people/jeslu-jacob" target="_blank">
-                            <img src="Jeslu1.jpg" class="card-img-top profile-image rounded-circle mb-2" style="width: 130px; height: 130px;" alt="Jeslu Jacob">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Jeslu Jacob</h5>
-                            <div class="card-text mb-3">
-                                <div class="meta">Sustainability Accelerator</div>
-                                <div class="meta">Stanford University, USA</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kiran Kumar Dev S -->
-                <div class="left col-6 col-lg-2 mb-4" style="display: inline-block; margin-right: 20px;">
-                    <div class="card rounded-0">
-                        <a href="https://www.iitbhu.ac.in/dept/apd/people/kirankumardevsapd" target="_blank">
-                            <img src="Kiran1.jpg" class="card-img-top profile-image rounded-circle mb-2" style="width: 130px; height: 130px;" alt="E V S Kiran Kumar Donthu">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">E V S Kiran Kumar Donthu</h5>
-                            <div class="card-text mb-3">
-                                <div class="meta">Department of Architecture, Planning and Design</div>
-                                <div class="meta">IIT BHU, India</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <!-- Pandarasamy Arjunan -->
-                <!-- <div class="left col-6 col-lg-2 mb-4" style="display: inline-block; margin-right: 20px;">
-                    <div class="card rounded-0">
-                        <a href="https://www.samy101.com" target="_blank">
-                            <img src="Samy1.jpg" class="card-img-top profile-image rounded-circle mb-2" style="width: 130px; height: 130px;" alt="Pandarasamy Arjunan">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Pandarasamy Arjunan</h5>
-                            <div class="card-text mb-3">
-                                <div class="meta">Indian Institute of Science, Bangalore</div>
-                                <div class="meta">India</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Prashant Anand -->
-                <div class="left col-6 col-lg-2 mb-4" style="display: inline-block; margin-right: 20px;">
-                    <div class="card rounded-0">
-                        <a href="https://www.iitkgp.ac.in/department/AR/faculty/ar-prashantanand" target="_blank">
-                            <img src="Prashant1.jpg" class="card-img-top profile-image rounded-circle mb-2 small-diameter" style="width: 130px; height: 130px;" alt="Prashant Anand">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Prashant Anand</h5>
-                            <div class="card-text mb-3">
-                                <div class="meta">Department Of Architecture & Regional Planning</div>
-                                <div class="meta">IIT Kharagpur, India</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div><!--//row-->					
+            </nav>
         </div>
     </div>
-</section>
+</header>
 
-         </section><!--//speakers-section-->	
-	
-	<section id="Committee" class="schedule-section section theme-bg-light">
-    <div class="container">
-        <h3 class="section-heading text-center mb-5">Technical Program Committee</h3>
-        <div class="mb-3 text-center">
-            <div class="benefits-list text-center mb-3">
-                <ul class="list-unstyled text-start d-inline-block">
-
-                    <li><span style="color:#5598CD;">Anurag Aman Kaushal</span>, SPA Bhopal, India</li>
-                    <li><span style="color:#5598CD;">Antonio Sanfilippo</span>, Qatar Environment & Energy Research Institute, Qatar</li>
-                    <li><span style="color:#5598CD;">Apoorv Khanuja</span>, University of Cincinnati, USA</li>
-                    <li><span style="color:#5598CD;">Deepa Rani</span>, CET Trivandrum, India</li>
-                    <li><span style="color:#5598CD;">El Tayeb Bentria</span>, Qatar Environment & Energy Research Institute, Qatar</li>
-                    <li><span style="color:#5598CD;">Kishor Zingre</span>, Northumbria University, UK</li>
-                    <li><span style="color:#5598CD;">Lily Rose</span>, SPA Vijayawada, India</li>
-                    <li><span style="color:#5598CD;">Mathew George</span>, Indian Institute for Human Settlements, India</li>
-                    <li><span style="color:#5598CD;">Prabhat Kumar Mishra</span>, Indian Institute of Technology Kharagpur, India</li>
-                    <li><span style="color:#5598CD;">Prasanth Ram J</span>, Energy Systems Laboratory, Pohang University of Science and Technology, South Korea</li>
-                    <li><span style="color:#5598CD;">Sandeep Yadav</span>, Stanford University, USA</li>
-                    <li><span style="color:#5598CD;">Shashwat S.</span>, Ulster University, UK</li>
-                    <li><span style="color:#5598CD;">Tanya Bedi</span>, SPA Bhopal, India</li>
-                    <li><span style="color:#5598CD;">Tarun Kumar</span>, Technological University Dublin, Ireland</li>
-                    <li><span style="color:#5598CD;">Vijayeta Malla</span>, Indian Institute of Technology Bombay, India</li>
-                    <li><span style="color:#5598CD;">Vishal Chettry</span>, Indian Institute of Technology Varanasi, India</li>
-                    <li><span style="color:#5598CD;">Vishal Kumar</span>, Massey University, New Zealand</li>
-
-                </ul>
+<!-- HERO -->
+<div id="hero-block">
+    <div class="hero-block-mask"></div>
+    <div class="container text-white text-center">
+        <div class="hero-text-block mx-auto" style="max-width: 750px;">
+            <h1 class="mb-3">AI4_BenchSys 2026</h1>
+            <div class="mb-3">
+                The 5th ACM International Workshop on Advancements in Building Performance Simulation and Benchmarking Systems
+            </div>
+            <div class="mb-3">(A BuildSys 2025 Workshop)</div>
+            <div>
+                <i class="far fa-calendar-alt me-2"></i>November 20-21, 2025<br>
+                <i class="fas fa-map-marker-alt me-2"></i>Banff, Canada, as part of the ACM Sustainability Week 2026
             </div>
         </div>
     </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section theme-bg-light">
+    <div class="container text-center">
+        <h3 class="section-heading">About BenchSys 2026</h3>
+        <div class="section-intro mx-auto">
+            <p>The AI4_BenchSys’25 workshop aims to bridge the gap between artificial intelligence and scalable building performance benchmarking from building to urban scale. Building on the success of the previous BenchSys series, this fourth edition integrates advances in AI, IoT, and urban-scale analytics to accelerate the digital transition toward sustainable built environments.</p>
+
+            <p>The workshop’s central objective is to explore AI-driven, scalable solutions for assessing, modeling, and benchmarking building performance in areas such as energy efficiency, climate adaptation, indoor and outdoor thermal comfort, and occupant well-being. With climate extremes and rapid urbanization placing unprecedented stress on cities, AI4_BenchSys’25 focuses on developing integrated, real-time, and intelligent systems that can manage large-scale data while ensuring privacy, standardization, and interpretability.</p>
+
+            <p>BenchSys 2022, 2023, and 2024 progressively broadened the scope from energy benchmarking to include indoor air quality, water use, health, wellness, and climate resilience. The 2025 edition deepens this focus through AI-enhanced urban-scale simulation, benchmarking, and sustainability strategies. The program will feature invited keynote talks, research paper presentations, and a panel discussion involving researchers, industry leaders, and policymakers from across the world to promote dialogue and collaboration for climate-resilient, human-centric cities.</p>
+        </div>
+    </div>
 </section>
 
+<!-- CFP -->
+<section id="cfp" class="section theme-bg-white">
+    <div class="container text-center">
+        <h3 class="section-heading">Call for Papers</h3>
+        <h5>BenchSys 2025 Call for Papers</h5>
 
-						</section>
-
-<section id="previous-benchsys" class="PreviousBenchSys-section section theme-bg-white">
-    <div class="container">
-        <h3 class="section-heading text-center mb-5">Previous BenchSys</h3>
-        <div class="section-intro text-center mx-auto mb-5">
-            <ul class="list-unstyled">
-				<li><a href="https://benchsys.github.io/2025/" target="_blank">BenchSys 2025</a></li>
-                <li><a href="https://benchsys.github.io/2024/" target="_blank">BenchSys 2024</a></li>
-                <li><a href="https://benchsys.github.io/2023/" target="_blank">BenchSys 2023</a></li>
-                <li><a href="https://benchsys.github.io/2022/" target="_blank">BenchSys 2022</a></li>
-            </ul>
+        <div class="section-intro mx-auto">
+            The objective of the BenchSys workshop is to showcase ongoing research and advancements in building performance benchmarking and rating methods across different countries, while fostering connections among academic scholars, industry partners, government agencies, and policymakers.
         </div>
-    </div><!--//container-->
-</section><!--//previous-benchsys-section-->
-<div class="container"><hr></div>
 
-	
-	
-	
-	
-	</section>
+        <br><br>
 
-	<section id="venue" class="Venue-section section theme-bg-white">
-		<div class="container">
-			<h3 class="section-heading text-center mb-5">Registration and Venue</h3>
-			<div class="section-intro text-center mx-auto mb-5">For registration and venue details, visa information, etcetera <a href="https://buildsys.acm.org/2025/">please visit the BuildSys webpage</a></div>
-		</div><!--//container-->
-	</section><!--//venue-section-->
-	<div class="container"><hr></div>
-	
-		
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
-
-    .grid-item {
-      position: relative;
-    }
-
-    .grid-item img {
-      width: 100%;
-      height: auto;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .overlay:hover {
-      opacity: 1;
-    }
-
-    .overlay img {
-      max-width: 80%;
-      max-height: 80%;
-    }
-  </style>
-</head>
-<body>
-  <div class="grid-container">
-    <div class="grid-item">
-      <img src="image1.jpeg" alt="Image 1">
-      <div class="overlay">
-        <img src="image1.jpeg" alt="Image 1">
-      </div>
+        <h4>Important Dates</h4>
+        <ul class="list-unstyled">
+            <li><strong>Paper submission: March 30, 2026 (AOE)</strong></li>
+            <li><strong>Notifications: April 15th, 2026 (AOE)</strong></li>
+            <li><strong>Camera-ready: April 30th, 2026 (AOE)</strong></li>
+            <li><strong>Workshop: June 22–25, 2026, Banff, Canada</strong></li>
+        </ul>
     </div>
-    <div class="grid-item">
-      <img src="image2.jpeg" alt="Image 2">
-      <div class="overlay">
-        <img src="image2.jpeg" alt="Image 2">
-      </div>
+</section>
+
+<!-- ORGANIZATION -->
+<section id="organization" class="section theme-bg-light">
+    <div class="container text-center">
+        <h3 class="section-heading">Organization</h3>
+        <h4>General Co-chairs</h4>
+
+        <div class="row justify-content-center">
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <img src="Chirag1.jpg" class="img-fluid rounded-circle mb-2" style="width:130px;height:130px;">
+                <h5>Chirag Deb</h5>
+                <div>School of Architecture, Design and Planning</div>
+                <div>The University of Sydney</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <img src="Jeslu1.jpg" class="img-fluid rounded-circle mb-2" style="width:130px;height:130px;">
+                <h5>Jeslu Jacob</h5>
+                <div>Sustainability Accelerator</div>
+                <div>Stanford University, USA</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <img src="Kiran1.jpg" class="img-fluid rounded-circle mb-2" style="width:130px;height:130px;">
+                <h5>E V S Kiran Kumar Donthu</h5>
+                <div>Department of Architecture, Planning and Design</div>
+                <div>IIT BHU, India</div>
+            </div>
+
+        </div>
     </div>
-    <div class="grid-item">
-      <img src="image3.jpeg" alt="Image 3">
-      <div class="overlay"> 
-        <img src="image3.jpeg" alt="Image 3">
-      </div>
+</section>
+
+<!-- PREVIOUS -->
+<section class="section theme-bg-white text-center">
+    <div class="container">
+        <h3 class="section-heading">Previous BenchSys</h3>
+        <ul class="list-unstyled">
+            <li><a href="https://benchsys.github.io/2025/">BenchSys 2025</a></li>
+            <li><a href="https://benchsys.github.io/2024/">BenchSys 2024</a></li>
+            <li><a href="https://benchsys.github.io/2023/">BenchSys 2023</a></li>
+            <li><a href="https://benchsys.github.io/2022/">BenchSys 2022</a></li>
+        </ul>
     </div>
-	  <div class="grid-item">
-      <img src="image4.jpeg" alt="Image 4">
-      <div class="overlay">
-        <img src="image4.jepg" alt="Image 4">
-      </div>
+</section>
+
+<!-- VENUE -->
+<section id="venue" class="section theme-bg-light text-center">
+    <div class="container">
+        <h3 class="section-heading">Registration and Venue</h3>
+        <p>
+            For registration and venue details, visa information, etcetera 
+            <a href="https://buildsys.acm.org/2025/" target="_blank">
+                please visit the BuildSys webpage
+            </a>
+        </p>
     </div>
-    <!-- Add more grid items as needed -->
-  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer py-3 theme-bg-primary text-center text-white">
+    <small>Designed with ♥ by Xiaoying Riley</small>
+</footer>
+
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-	
-
-	<footer class="footer py-2 theme-bg-primary">
-		<div class="container text-center">
-			 <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			<small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-		</div><!--//container-->	    
-	</footer>
-	
-	<!-- Javascript -->          
-	<script src="plugins/popper.min.js"></script>
-	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>  
-	<script src="plugins/smoothscroll.min.js"></script>
-	<script src="plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-	<script src="js/main.js"></script>  
-
-</body>
-</html> 
